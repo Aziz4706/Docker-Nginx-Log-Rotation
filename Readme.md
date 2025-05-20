@@ -1,8 +1,8 @@
-# Docker Üzerinde Çalışan Nginx İçin Log Rotation
+# Docker Üzerinde Çalışan Nginx İçin Log Rotation Rehberi
 
 ## 🎯 Neden Log Rotation Önemlidir?
 
-Web uygulamaları, özellikle yoğun trafiğe sahip ortamlarda çalışırken, Reverse proxy görevini üstlenen Nginx tarafından çok sayıda log üretir. Bu loglar zaman içinde ciddi boyutlara ulaşabilir. Eğer log dosyaları zamanında rotate edilmezse ve yönetilmezse, sistemde disk alanı dolabilir, performans düşebilir veya servisler kesintiye uğrayabilir.
+Web uygulamaları, özellikle yoğun trafiğe sahip ortamlarda çalışırken, Reverse proxy görevini üstlenen Nginx tarafından çok sayıda log üretir. Bu loglar zaman içinde ciddi boyutlara ulaşabilir. Eğer log dosyaları zamanında döndürülmez (rotate edilmez) ve yönetilmezse, sistemde disk alanı dolabilir, performans düşebilir veya servisler kesintiye uğrayabilir.
 
 Docker konteynerlerinde bu problem daha da karmaşık hale gelir çünkü konteynerler genellikle kısa ömürlüdür ve sistem logları dış dünyadan izole olabilir.
 
@@ -174,4 +174,5 @@ Yazılımcılar ve sistem yöneticileri için bu yapıların doğru şekilde kon
 
 ---
 
-*Oluşturulma Tarihi: 2025-05-20*
+*Oluşturulma Tarihi: 2025-05-2025
+
