@@ -2,7 +2,7 @@
 
 ## 🎯 Neden Log Rotation Önemlidir?
 
-Web uygulamaları, özellikle yoğun trafiğe sahip ortamlarda çalışırken, Reverse proxy görevini üstlenen Nginx tarafından çok sayıda log üretir. Bu loglar zaman içinde ciddi boyutlara ulaşabilir. Eğer log dosyaları zamanında döndürülmez (rotate edilmez) ve yönetilmezse, sistemde disk alanı dolabilir, performans düşebilir veya servisler kesintiye uğrayabilir.
+Web uygulamaları, özellikle yoğun trafiğe sahip ortamlarda çalışırken, Reverse proxy görevini üstlenen Nginx tarafından çok sayıda log üretir. Bu loglar zaman içinde ciddi boyutlara ulaşabilir. Eğer log dosyaları zamanında rotate edilmez ve yönetilmezse, sistemde disk alanı dolabilir, performans düşebilir veya servisler kesintiye uğrayabilir.
 
 Docker konteynerlerinde bu problem daha da karmaşık hale gelir çünkü konteynerler genellikle kısa ömürlüdür ve sistem logları dış dünyadan izole olabilir.
 
@@ -129,13 +129,6 @@ Bu yöntem sistem tarafından otomatik olarak yönetildiği için `logrotate` gi
 
 ---
 
-## 📦 Üçüncü Parti Araçlarla Yönetim
-
-- **Logrotate Container**: logrotate işlemini kendi başına yapan bağımsız bir konteyner çalıştırabilirsiniz.
-- **Rsyslog + Volume Mount**: Nginx loglarını syslog soketine gönderip, syslog üzerinden döndürmek mümkündür.
-- **Centralized Logging**: Fluentd, Filebeat, Logstash gibi ajanlar ile logları merkezi sunuculara yönlendirebilir, daha ileri analiz yapılabilir.
-
----
 
 ## 🧪 Test ve Doğrulama
 
