@@ -1,4 +1,4 @@
-# Docker Üzerinde Çalışan Nginx İçin Log Rotation Rehberi
+# Docker Üzerinde Çalışan Nginx İçin Log Rotation
 
 ## 🎯 Neden Log Rotation Önemlidir?
 
